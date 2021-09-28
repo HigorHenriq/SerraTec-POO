@@ -3,7 +3,7 @@ package calculadora;
 public class MainCalculadora {
 
 	public static void main(String[] args) {
-		
+		/* METODO ANTIGO !SEM INTERAÇÃO
 		Calculadora op1 = new Calculadora();
 		
 		System.out.printf("Resultado da soma> %.2f", op1.Calc(5.0, 5.5, 1));
@@ -19,7 +19,12 @@ public class MainCalculadora {
 		Calculadora op4 = new Calculadora();
 		
 		System.out.printf("\nResultado da divisão> %.2f", op4.Calc(100.0, 2.0, 4));
-
+		*/
+		
+		//METODO CORRIGIDO COM INTERAÇÃO
+		
+		
+		
 	}
 
 }

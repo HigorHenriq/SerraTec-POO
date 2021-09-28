@@ -1,11 +1,11 @@
 package calculadora;
 
 public class Calculadora {
-	/*Double soma;
-	Double subtracao;
-	Double mult;
-	Double divisao;*/
-	
+	/*soma;
+	subtracao;
+	mult;
+	divisao;*/
+		
 	Integer operacao;
 	Double resultado;
 	Double valor1, valor2;
@@ -18,9 +18,8 @@ public class Calculadora {
 		this.resultado = resultado;
 	}
 	
-	
 	public Double Calc(Double valor1,Double valor2, Integer operacao) {
-			
+		
 		switch (operacao) {
 			case 1:
 				this.setResultado(valor1 + valor2);
@@ -33,6 +32,9 @@ public class Calculadora {
 				break;
 			case 4:
 				this.setResultado(valor1 / valor2);
+				break;
+			default:
+				System.out.printf("Valor Invalido!");
 				break;
 		}
 		
