@@ -89,18 +89,18 @@ public class Pedido {
 		/* UTILIZANDO LOCAL DATE
 		if(dataPedido.getDayOfWeek().name() == "SUNDAY") {
 		
-			setValor(getValor() - getValor() * 10/100);
+				setValor(getValor() - getValor() * 10/100);
 			System.out.printf("\nDIA DE DESCONTO! ");
 			System.out.printf("\nPedido Finalizado:"
 					+ "\nDia: %s"
-					+ "\nQuantidade: %d"
+					+ "\nQuantidade: %.0f"
 					+ "\nTotal: %.2f"
 					,dataPedido, getQuantidade(), getValorTotal());
 			
 		}else {
 			System.out.printf("\nPedido Finalizado:"
 					+ "\nDia: %s"
-					+ "\nQuantidade: %d"
+					+ "\nQuantidade: %.0f"
 					+ "\nTotal: %.2f"
 					,dataPedido, getQuantidade(), getValorTotal());
 		}*/

@@ -15,7 +15,7 @@ public class MainPedido {
 		p2.setDataPedido("QUARTA");
 		p2.setQuantidade(3.0);
 		p2.setValor(500.00);
-		//p2.setValorTotal(250.00, 250.00);
+		
 		
 		p2.finalizar();
 		
