@@ -1,7 +1,7 @@
 package pedido;
 
 //import java.time.LocalDate;
-
+//git teste
 public class Pedido {
 	
 	private Integer numero;
