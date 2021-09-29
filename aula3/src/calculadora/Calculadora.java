@@ -1,10 +1,11 @@
 package calculadora;
 
 public class Calculadora {
-	/*soma;
+	/*METODO ANTIGO !SEM INTERAÇÃO
+	soma;
 	subtracao;
 	mult;
-	divisao;*/
+	divisao;
 		
 	Integer operacao;
 	Double resultado;
@@ -39,7 +40,25 @@ public class Calculadora {
 		}
 		
 		return resultado;	
-}	
+}*/
+	
+	//METODO CORRIGIDO COM INTERAÇÃO
+	
+	public double somar(double valor1ADD, double valor2ADD) {
+		return valor1ADD + valor2ADD;
+	}
+	
+	public double subtrair(double valor1SUB, double valor2SUB) {		
+		return valor1SUB - valor2SUB;
+	}
+	
+	public double multiplicar(double valor1MULT, double valor2MULT) {
+		return valor1MULT * valor2MULT;
+	}
+	
+	public double dividir(double valor1DIV, double valor2DIV) {
+		return valor1DIV / valor2DIV;
+	}
 }
 
 
