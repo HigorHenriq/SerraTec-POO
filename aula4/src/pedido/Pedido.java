@@ -1,11 +1,13 @@
 package pedido;
 
-//import java.time.LocalDate;
-//git teste
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
 public class Pedido {
 	
 	private Integer numero;
-	private String dataPedido;
+	//private String dataPedido; //METODO PARA TESTE COM STRING
+	private LocalDate dataPedido;
 	private Double quantidade;
 	private Double valor;
 	//private static double valorTotal;
@@ -29,7 +31,7 @@ public class Pedido {
 		Pedido.totalPedidos += 1;
 	}
 
-	public Pedido(Integer numero, String dataPedido, Double quantidade, Double valor) {
+	public Pedido(Integer numero, LocalDate dataPedido, Double quantidade, Double valor) {
 		this();
 		this.numero = numero;
 		this.dataPedido = dataPedido;
@@ -52,13 +54,13 @@ public class Pedido {
 
 
 
-	public String getDataPedido() {
+	public LocalDate getDataPedido() {
 		return dataPedido;
 	}
 
 
 
-	public void setDataPedido(String dataPedido) {
+	public void setDataPedido(LocalDate dataPedido) {
 		this.dataPedido = dataPedido;
 	}
 
@@ -86,8 +88,8 @@ public class Pedido {
 	
 	
 	public void finalizar() {
-		/* UTILIZANDO LOCAL DATE
-		if(dataPedido.getDayOfWeek().name() == "SUNDAY") {
+		// UTILIZANDO LOCAL DATE
+		if(dataPedido.getDayOfWeek().equals(DayOfWeek.SUNDAY)) {
 		
 				setValor(getValor() - getValor() * 10/100);
 			System.out.printf("\nDIA DE DESCONTO! ");
@@ -103,9 +105,9 @@ public class Pedido {
 					+ "\nQuantidade: %.0f"
 					+ "\nTotal: %.2f"
 					,dataPedido, getQuantidade(), getValorTotal());
-		}*/
+		}
 		
-		// UTILIZANDO STRING PARA TESTE
+		/* UTILIZANDO STRING PARA TESTE
 		if(dataPedido == "DOMINGO") {
 			
 			setValor(getValor() - getValor() * 10/100);
@@ -122,7 +124,7 @@ public class Pedido {
 					+ "\nQuantidade: %.0f"
 					+ "\nTotal: %.2f"
 					,dataPedido, getQuantidade(), getValorTotal());
-		}
+		}*/
 	}
 
 }
