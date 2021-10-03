@@ -13,6 +13,14 @@ public class Contato {
 		this.telefone = telefone;
 	}
 
+	@Override
+	public String toString() {
+		
+		return String.format("Nome: " + getNome() +
+				"\n-_Estado: " + getEndereco().getCidade().getEstado().getNomeEstado() +  
+				"\n-_Cidade: " + getEndereco().getCidade().getNomeCidade() +
+				getEndereco().EnderecoCompleto());
+	}
 
 	public String getNome() {
 		return nome;

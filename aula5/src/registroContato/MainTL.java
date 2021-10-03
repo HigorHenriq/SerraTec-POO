@@ -24,16 +24,18 @@ public class MainTL {
 		
 		Contato c1 = new Contato("Toretto", endereco1, telefoneCT1);
 		
-		imprimirContato(c1);
+		//imprimirContato(c1);
+		System.out.println(c1.toString());
 		c1.mostrarTelefones();
 
 	}
 	
+	/*
 	public static void imprimirContato(Contato contato) {
 		
 		System.out.println("Nome: " + contato.getNome());
 		System.out.println("-_Estado: " + contato.getEndereco().getCidade().getEstado().getNomeEstado() +  
 							"\n-_Cidade: " + contato.getEndereco().getCidade().getNomeCidade() +
 							contato.getEndereco().EnderecoCompleto());
-	}
+	}*/
 }
