@@ -51,7 +51,7 @@ public class Aluno {
 		return media;
 	}
 	
-	public void teste() {
+	public void regraNotas() {
 
 			if(getNota1() > 10 || getNota1() < 0) {
 				

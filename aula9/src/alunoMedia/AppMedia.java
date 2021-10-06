@@ -25,7 +25,7 @@ public class AppMedia {
 		for (Aluno al : liAluno) {
 			
 			try {
-				al.teste();
+				al.regraNotas();
 				
 			System.out.println("-_Aluno: " + al.getNome() + 
 								" --Nota 1: " + al.getNota1() +
