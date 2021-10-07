@@ -5,8 +5,8 @@ public class Bebidas extends Produto {
 
 	private double teorAlcoolico;
 
-	public Bebidas(String nome, double valor, int quantidadeItens, double teorAlcoolico) {
-		super(nome, valor, quantidadeItens);
+	public Bebidas(String nome, double valor/*, int quantidadeItens*/, double teorAlcoolico) {
+		super(nome, valor/*, quantidadeItens*/);
 		this.teorAlcoolico = teorAlcoolico;
 	}
 	

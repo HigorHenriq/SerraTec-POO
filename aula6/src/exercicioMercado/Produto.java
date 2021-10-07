@@ -6,17 +6,17 @@ public abstract class Produto implements Venda {
 	private double valor;
 	private int quantidadeItens;
 	
-	public Produto(String nome, double valor, int quantidadeItens) {
+	public Produto(String nome, double valor/*, int quantidadeItens*/) {
 		this.nome = nome;
 		this.valor = valor;
-		this.quantidadeItens = quantidadeItens;
+		//this.quantidadeItens = quantidadeItens;
 	}
 	
 	@Override
 	public String toString() {
 		return String.format("\nProduto: " + this.nome +
-							"\nQuantidade: " + getQuantidadeItens() + 
-							"\nTotal: " + getValor());
+							"\nTotal: " + getValor() +
+							"\nQuantidade: "  );
 	}
 
 	public String getNome() {
@@ -47,7 +47,7 @@ public abstract class Produto implements Venda {
 
 	
 	@Override
-	public double vender() {
+	public double vender(int quantidadeItens) {
 		
 		this.valor = valor * quantidadeItens;
 		return valor;
